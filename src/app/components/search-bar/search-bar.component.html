@@ -2,8 +2,7 @@
     <input 
         placeholder="Search..." 
         type="text"
-        [ngModel]="search()"
-        (ngModelChange)="updateSearch($event)"
+        [(ngModel)]="search"
         />
     <button
     (click)="searchClick()"
