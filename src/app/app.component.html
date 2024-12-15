@@ -1,6 +1,7 @@
 <app-search-bar 
   (searchButtonClicked)="increaseCount()"
-  
+  (searchChange)="search = $event"
+  [(search)]="search"
   [search]="search"
   
 />

@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, EventEmitter, input, Input, output, Output } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 @Component({
@@ -11,10 +11,10 @@ import { FormsModule } from '@angular/forms';
 export class SearchBarComponent {
 
 
-  @Input() search = "";
+  search = input<string>("");
 
-  @Output() searchButtonClicked = new EventEmitter();
-  @Output() searchChange = new EventEmitter<string>();
+  searchButtonClicked = output();
+  searchChange = output<string>();
   
   
   searchClick() {
